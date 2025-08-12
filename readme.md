@@ -1,6 +1,9 @@
+# install virtual env
+
+python -m venv .venv
+
 # enavle virtual env
 
-python -m venv .venv  
 .venv\Scripts\activate
 
 # install requirements
@@ -11,11 +14,11 @@ pip install -r requirements.txt
 
 django-admin startproject api
 
-# Install New app
+# setup New app within project
 
 python manage.py startapp restapi
 
-# migrations
+# run migrations
 
 python manage.py makemigrations
 python manage.py migrate
